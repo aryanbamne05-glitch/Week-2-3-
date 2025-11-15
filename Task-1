@@ -1,0 +1,21 @@
+function fakeAPICall() {
+  console.log("Fetching user details...");
+
+  setTimeout(() => {
+    console.log("User data received");
+
+    setTimeout(() => {
+      console.log("Processing Data...");
+    }, 1500);
+
+  }, 2000);
+}
+
+fakeAPICall();
+
+Output:-
+Fetching user details...
+(2 seconds later)
+User data received
+(1.5 seconds later)
+Processing Data...
